@@ -1,4 +1,4 @@
-# Setup
+### Setup
 ```
 # First, set up your virtual environment.
 # http://docs.python-guide.org/en/latest/dev/virtualenvs/
@@ -17,7 +17,7 @@ export SPARK_LOCAL_IP="127.0.0.1"
 # Or else you'll need to run this every time you open a new terminal.
 ```
 
-## Initializing a console
+### Initializing a console
 ```
 pyspark
 # The quickstart guide says to use `./bin/pyspark` to start a pyspark shell,
@@ -26,7 +26,7 @@ pyspark
 
 ### Running Scripts
 ```
-spark-submit --master local[4] test_spark/bin/simple_script.py
+spark-submit test_spark/bin/simple_script.py
 # The quickstart guide says to use `YOUR_SPARK_HOME/bin/spark-submit`,
 # but if you're using a virtual environment, it's just `spark-submit`.
 ```
